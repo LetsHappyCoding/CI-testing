@@ -1,4 +1,4 @@
-name: "Danger JS Workflow"
+name: "Danger JS"
 on: [pull_request]
 
 jobs:
@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Danger Step
+    - name: Danger
       uses: danger/danger-js@11.0.2
       env:
         DANGER_GITHUB_API_TOKEN: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
