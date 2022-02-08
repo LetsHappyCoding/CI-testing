@@ -8,6 +8,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Danger
-      uses: danger/danger-js@9.1.6
+      uses: danger/danger-js@11.0.2
     env:
-      GITHUB_TOKEN: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
